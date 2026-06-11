@@ -10,14 +10,14 @@
 
 / {
     macros {
-        ctrlAP: ctrlAP {
+        pretmux: ctrlAP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(A) &kp P>;
             label = "CTRLAP";
         };
 
-        ctrlAN: ctrlAN {
+        nexttmux: ctrlAN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(A) &kp N>;
@@ -102,7 +102,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans     &trans    &kp LG(LA(PG_UP))  &kp LG(PG_UP)  &kp LG(PG_DN)  &kp LG(LA(PG_DN))  &trans  &trans
 &trans  &trans  &trans  &trans  &trans     &trans    &trans             &trans         &trans         &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &ctrlAP            &ctrlAN        &trans         &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &pretmux           &nexttmux      &trans         &trans             &trans  &trans
                         &trans  &kp LC(X)  &trans    &trans             &kp LC(X)      &trans
             >;
         };
