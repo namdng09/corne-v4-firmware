@@ -22,10 +22,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q        &lt 3 W           &kp E     &kp R      &kp T        &kp Y  &kp U      &kp I          &kp O              &kp P                   &kp BSPC
-&kp ESC    &mt RCTRL A  &mt LEFT_SHIFT S  &lt 2 D   &lt 1 F    &kp G        &kp H  &kp J      &kp K          &mt RIGHT_SHIFT L  &mt RIGHT_CONTROL SEMI  &kp SQT
-&kp LSHFT  &kp Z        &kp X             &kp C     &kp V      &kp B        &kp N  &kp M      &kp COMMA      &kp DOT            &kp FSLH                &kp LEFT_SHIFT
-                                          &kp LGUI  &kp SPACE  &kp ENTER    &kp A  &kp SPACE  &kp RIGHT_WIN
+&kp TAB    &lt 6 Q      &lt 3 W           &lt 5 E   &kp R      &kp T                &kp Y          &kp U      &kp I          &kp O              &kp P                   &kp BSPC
+&kp ESC    &mt RCTRL A  &mt LEFT_SHIFT S  &lt 2 D   &lt 1 F    &kp G                &kp H          &kp J      &kp K          &mt RIGHT_SHIFT L  &mt RIGHT_CONTROL SEMI  &kp SQT
+&kp LSHFT  &kp Z        &kp X             &kp C     &kp V      &kp B                &kp N          &kp M      &kp COMMA      &kp DOT            &kp FSLH                &kp LEFT_SHIFT
+                                          &kp LGUI  &kp SPACE  &kp LC(BACKSPACE)    &kp BACKSPACE  &kp SPACE  &kp RIGHT_WIN
             >;
         };
 
@@ -40,9 +40,9 @@
 
         arrows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans         &trans           &trans       &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &kp LEFT         &kp DOWN     &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &kp LS(LC(TAB))  &kp LC(TAB)  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans           &trans       &trans  &trans     &kp K_PREV  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &kp LEFT         &kp DOWN     &kp UP  &kp RIGHT  &kp K_BACK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &kp LS(LC(TAB))  &kp LC(TAB)  &trans  &trans     &trans      &trans
                         &trans  &trans  &kp K_PASTE    &trans           &trans       &trans
             >;
         };
@@ -66,10 +66,10 @@
 
         audios {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_AC_HOME     &kt PAGE_DOWN   &kp PAGE_UP   &kt END  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp K_MUTE        &kp C_VOL_DN    &kp C_VOL_UP  &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp K_PLAY_PAUSE  &kp K_PREVIOUS  &kp K_NEXT    &trans   &trans  &trans
-                        &trans  &trans  &trans    &trans            &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_AC_HOME     &kt PAGE_DOWN  &kp PAGE_UP   &kt END  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp K_MUTE        &kp C_VOL_DN   &kp C_VOL_UP  &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp K_PLAY_PAUSE  &kp K_BACK     &kp K_NEXT    &trans   &trans  &trans
+                        &trans  &trans  &trans    &trans            &trans         &trans
             >;
         };
 
@@ -79,6 +79,15 @@
 &trans  &trans  &trans  &trans  &kp LG(LS(S))  &trans       &kp NUMBER_4  &kp N5        &kp N6  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans         &trans       &kp NUMBER_1  &kp NUMBER_2  &kp N3  &trans  &trans  &trans
                         &trans  &trans         &kp LC(A)    &trans        &trans        &trans
+            >;
+        };
+
+        hypr {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans       &kp LG(LA(PG_UP))  &kp LG(PG_UP)  &kp LG(PG_DN)  &kp LG(LA(PG_DN))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans             &trans         &trans         &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans             &trans         &trans         &trans             &trans  &trans
+                        &trans  &trans  &kp LC(X)    &trans             &trans         &trans
             >;
         };
 
