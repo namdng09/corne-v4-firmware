@@ -9,6 +9,22 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        ctrlAP: ctrlAP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp P>;
+            label = "CTRLAP";
+        };
+
+        ctrlAN: ctrlAN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp N>;
+            label = "CTRLAN";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -86,7 +102,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans     &trans    &kp LG(LA(PG_UP))  &kp LG(PG_UP)  &kp LG(PG_DN)  &kp LG(LA(PG_DN))  &trans  &trans
 &trans  &trans  &trans  &trans  &trans     &trans    &trans             &trans         &trans         &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &trans             &trans         &trans         &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &ctrlAP            &ctrlAN        &trans         &trans             &trans  &trans
                         &trans  &kp LC(X)  &trans    &trans             &kp LC(X)      &trans
             >;
         };
