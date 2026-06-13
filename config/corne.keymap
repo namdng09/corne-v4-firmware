@@ -81,19 +81,19 @@
 
         misc {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans    &trans                &trans         &trans         &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &kp LC(BACKSPACE)     &kp BACKSPACE  &kp LS(ENTER)  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &kp LA(SINGLE_QUOTE)  &kp DEL        &trans         &trans  &trans  &trans
-                        &trans  &kp ENTER  &trans    &trans                &kp RET        &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans             &trans                &trans         &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &kp LC(BACKSPACE)  &kp BACKSPACE         &kp LS(ENTER)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &kp LA(DEL)        &kp LA(SINGLE_QUOTE)  &trans         &trans  &trans  &trans
+                        &trans  &kp ENTER  &trans    &trans             &kp RET               &trans
             >;
         };
 
         arrows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans    &trans           &trans       &trans  &trans     &kp K_FORWARD  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &kp LEFT         &kp DOWN     &kp UP  &kp RIGHT  &kp K_BACK     &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &trans  &trans     &trans         &trans
-                        &trans  &kp LC(V)  &trans    &trans           &kp LC(V)    &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans    &trans           &trans       &trans     &kp K_FORWARD  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &kp K_BACK     &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &trans     &trans         &trans
+                        &trans  &kp LC(V)  &trans    &trans    &kp LC(V)        &trans
             >;
         };
 
@@ -136,7 +136,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans     &trans    &kp LG(LA(PG_UP))  &kp LG(PG_UP)     &kp LG(PG_DN)    &kp LG(LA(PG_DN))  &trans  &trans
 &trans  &trans  &trans  &trans  &trans     &trans    &msc MOVE_X(-10)   &msc MOVE_Y(-15)  &msc MOVE_Y(15)  &msc MOVE_Y(10)    &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &pretmux           &nexttmux         &trans           &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans             &pretmux          &nexttmux        &trans             &trans  &trans
                         &trans  &kp LC(X)  &trans    &trans             &kp LC(X)         &trans
             >;
         };
