@@ -80,7 +80,7 @@
         };
 
         dvorak {
-            display-name = "Default Layer";
+            display-name = "dvorak";
             bindings = <
 &kp TAB  &lt 7 SINGLE_QUOTE  &lt 4 COMMA        &lt 6 DOT  &kp P      &kp Y    &kp F          &kp G      &kp C          &kp R  &kp L  &mt LEFT_ALT SLASH
 &kp ESC  &hml LCTRL A        &hml LEFT_SHIFT O  &lt 3 E    &lt 2 U    &kp I    &kp D          &kp H      &kp T          &kp N  &kp S  &kp MINUS
