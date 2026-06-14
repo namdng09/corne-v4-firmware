@@ -12,6 +12,12 @@
 &mt {
 };
 
+&mmv {
+};
+
+&msc {
+};
+
 / {
     macros {
         pretmux: ctrlAP {
