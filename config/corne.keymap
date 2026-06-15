@@ -99,7 +99,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans     &trans    &trans             &trans                &trans         &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans     &trans    &kp LC(BACKSPACE)  &kp BACKSPACE         &kp LS(ENTER)  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &kp LA(DEL)        &kp LA(SINGLE_QUOTE)  &trans         &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &kp DEL            &kp LA(SINGLE_QUOTE)  &trans         &trans  &trans  &trans
                         &trans  &kp ENTER  &trans    &trans             &kp RET               &trans
             >;
         };
