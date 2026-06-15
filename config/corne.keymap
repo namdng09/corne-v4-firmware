@@ -78,7 +78,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &lt 7 Q       &lt 4 W            &lt 6 E   &kp R      &kp T    &kp Y          &kp U      &kp I          &kp O               &kp P                 &mt LEFT_ALT BACKSPACE
+&kp TAB           &lt 7 Q       &lt 4 W            &lt 6 E   &kp R      &kp T    &kp Y          &kp U      &kp I          &kp O               &kp P                 &mt LEFT_ALT LEFT_BRACKET
 &kp ESC           &hml LCTRL A  &hml LEFT_SHIFT S  &lt 3 D   &lt 2 F    &kp G    &kp H          &kp J      &kp K          &hmr RIGHT_SHIFT L  &hmr RCTRL SEMICOLON  &kp SQT
 &lt 8 LEFT_SHIFT  &kp Z         &kp X              &kp C     &lt 5 V    &kp B    &kp N          &kp M      &kp COMMA      &kp DOT             &kp FSLH              &mo 10
                                                    &kp LGUI  &kp SPACE  &mo 9    &kp RG(SPACE)  &kp SPACE  &kp RIGHT_WIN
