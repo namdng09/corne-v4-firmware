@@ -12,11 +12,9 @@
 &mt {
 };
 
-&mmv {
-};
+&mmv { time-to-max-speed-ms = <200>; };
 
-&msc {
-};
+&msc { time-to-max-speed-ms = <200>; };
 
 / {
     macros {
@@ -78,20 +76,20 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &lt 8 Q       &lt 5 W            &lt 7 E   &kp R      &kp T    &kp Y          &kp U      &kp I          &kp O               &kp P                 &mt LEFT_ALT LEFT_BRACKET
-&kp ESC           &hml LCTRL A  &hml LEFT_SHIFT S  &lt 4 D   &lt 3 F    &kp G    &kp H          &kp J      &kp K          &hmr RIGHT_SHIFT L  &hmr RCTRL SEMICOLON  &kp SQT
-&lt 9 LEFT_SHIFT  &kp Z         &kp X              &kp C     &lt 6 V    &kp B    &kp N          &kp M      &kp COMMA      &kp DOT             &kp FSLH              &mo 10
-                                                   &kp LGUI  &kp SPACE  &mo 2    &kp RG(SPACE)  &kp SPACE  &kp RIGHT_WIN
+&kp TAB         &lt 8 Q       &lt 5 W            &lt 7 E   &kp R      &kp T    &kp Y          &kp U      &kp I          &kp O               &kp P                 &mt LEFT_ALT LEFT_BRACKET
+&kp ESC         &hml LCTRL A  &hml LEFT_SHIFT S  &lt 4 D   &lt 3 F    &kp G    &kp H          &kp J      &kp K          &hmr RIGHT_SHIFT L  &hmr RCTRL SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X              &kp C     &lt 6 V    &kp B    &kp N          &kp M      &kp COMMA      &kp DOT             &kp FSLH              &mo 9
+                                                 &kp LGUI  &kp SPACE  &mo 2    &kp RG(SPACE)  &kp SPACE  &kp RIGHT_WIN
             >;
         };
 
         dvorak {
             display-name = "dvorak";
             bindings = <
-&kp TAB           &lt 8 SINGLE_QUOTE  &lt 5 COMMA        &lt 7 DOT  &kp P      &kp Y    &kp F          &kp G      &kp C          &kp R               &kp L                 &mt LEFT_ALT SLASH
-&kp ESC           &hml LCTRL A        &hml LEFT_SHIFT O  &lt 4 E    &lt 3 U    &kp I    &kp D          &kp H      &kp T          &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL S  &kp MINUS
-&lt 9 LEFT_SHIFT  &kp SEMI            &kp Q              &kp J      &kp K      &kp X    &kp B          &kp M      &kp W          &kp V               &kp Z                 &mo 10
-                                                         &kp LGUI   &kp SPACE  &mo 2    &kp RG(SPACE)  &kp SPACE  &kp RIGHT_WIN
+&kp TAB         &lt 8 SINGLE_QUOTE  &lt 5 COMMA        &lt 7 DOT  &kp P      &kp Y    &kp F          &kp G      &kp C          &kp R               &kp L                 &mt LEFT_ALT SLASH
+&kp ESC         &hml LCTRL A        &hml LEFT_SHIFT O  &lt 4 E    &lt 3 U    &kp I    &kp D          &kp H      &kp T          &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL S  &kp SLASH
+&kp LEFT_SHIFT  &kp SEMI            &kp Q              &kp J      &kp K      &kp X    &kp B          &kp M      &kp W          &kp V               &kp Z                 &mo 9
+                                                       &kp LGUI   &kp SPACE  &mo 2    &kp RG(SPACE)  &kp SPACE  &kp RIGHT_WIN
             >;
         };
 
@@ -159,29 +157,19 @@
 
         hypr {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans    &kp LG(LA(PG_UP))  &kp LG(PG_UP)     &kp LG(PG_DN)    &kp LG(LA(PG_DN))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &msc MOVE_X(-10)   &msc MOVE_Y(-15)  &msc MOVE_Y(15)  &msc MOVE_Y(10)    &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &trans             &pretmux          &nexttmux        &trans             &trans  &trans
-                        &trans  &kp LC(X)  &trans    &trans             &kp LC(X)         &trans
-            >;
-        };
-
-        e {
-            display-name = "Lower Layer";
-            bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &kp DEL
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&trans  &trans  &trans  &trans  &trans     &trans    &kp LG(LA(PG_UP))  &kp LG(PG_UP)   &kp LG(PG_DN)  &kp LG(LA(PG_DN))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &msc SCRL_LEFT     &msc SCRL_DOWN  &msc SCRL_UP   &msc SCRL_RIGHT    &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans             &pretmux        &nexttmux      &trans             &trans  &trans
+                        &trans  &kp LC(X)  &trans    &trans             &kp LC(X)       &trans
             >;
         };
 
         clayer {
             bindings = <
-&trans  &tog 0  &tog 1  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &tog 0  &tog 1  &trans  &trans  &trans    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans        &trans        &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans        &trans        &trans        &trans  &trans
+                        &trans  &trans  &trans    &trans      &trans        &trans
             >;
         };
     };
