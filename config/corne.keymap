@@ -78,10 +78,29 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &lt 6 Q       &lt 3 W            &lt 5 E   &kp R      &kp T    &kp Y          &kp U      &kp I          &kp O               &kp P                 &mt LEFT_ALT LEFT_BRACKET
-&kp ESC           &hml LCTRL A  &hml LEFT_SHIFT S  &lt 2 D   &lt 1 F    &kp G    &kp H          &kp J      &kp K          &hmr RIGHT_SHIFT L  &hmr RCTRL SEMICOLON  &kp SQT
-&lt 7 LEFT_SHIFT  &kp Z         &kp X              &kp C     &lt 4 V    &kp B    &kp N          &kp M      &kp COMMA      &kp DOT             &kp FSLH              &kp RIGHT_SHIFT
-                                                   &kp LGUI  &kp SPACE  &mo 8    &kp RG(SPACE)  &kp SPACE  &kp RIGHT_WIN
+&kp TAB           &lt 8 Q       &lt 5 W            &lt 7 E   &kp R      &kp T    &kp Y          &kp U      &kp I          &kp O               &kp P                 &mt LEFT_ALT LEFT_BRACKET
+&kp ESC           &hml LCTRL A  &hml LEFT_SHIFT S  &lt 4 D   &lt 3 F    &kp G    &kp H          &kp J      &kp K          &hmr RIGHT_SHIFT L  &hmr RCTRL SEMICOLON  &kp SQT
+&lt 9 LEFT_SHIFT  &kp Z         &kp X              &kp C     &lt 6 V    &kp B    &kp N          &kp M      &kp COMMA      &kp DOT             &kp FSLH              &mo 10
+                                                   &kp LGUI  &kp SPACE  &mo 2    &kp RG(SPACE)  &kp SPACE  &kp RIGHT_WIN
+            >;
+        };
+
+        dvorak {
+            display-name = "dvorak";
+            bindings = <
+&kp TAB           &lt 8 SINGLE_QUOTE  &lt 5 COMMA        &lt 7 DOT  &kp P      &kp Y    &kp F          &kp G      &kp C          &kp R               &kp L                 &mt LEFT_ALT SLASH
+&kp ESC           &hml LCTRL A        &hml LEFT_SHIFT O  &lt 4 E    &lt 3 U    &kp I    &kp D          &kp H      &kp T          &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL S  &kp MINUS
+&lt 9 LEFT_SHIFT  &kp SEMI            &kp Q              &kp J      &kp K      &kp X    &kp B          &kp M      &kp W          &kp V               &kp Z                 &mo 10
+                                                         &kp LGUI   &kp SPACE  &mo 2    &kp RG(SPACE)  &kp SPACE  &kp RIGHT_WIN
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &mkp LCLK       &mkp RCLK     &trans           &trans  &trans
+                        &trans  &trans  &trans    &trans          &trans          &trans
             >;
         };
 
@@ -157,12 +176,12 @@
             >;
         };
 
-        mouse {
+        clayer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &mkp LCLK       &mkp RCLK     &trans           &trans  &trans
-                        &trans  &trans  &trans    &trans          &trans          &trans
+&trans  &tog 0  &tog 1  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
