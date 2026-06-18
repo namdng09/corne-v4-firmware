@@ -101,16 +101,16 @@
 
         mouse {
             bindings = <
-&trans  &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END       &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-&trans  &trans    &kp K_MUTE     &kp C_VOL_DN  &kp C_VOL_UP  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans    &kp K_PP       &kp K_PREV    &kp K_NEXT    &trans    &trans          &mkp LCLK       &mkp RCLK     &trans           &trans  &trans
+&trans  &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END       &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &bt BT_CLR
+&trans  &trans    &kp K_MUTE     &kp C_VOL_DN  &kp C_VOL_UP  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &bt BT_SEL 0
+&trans  &trans    &kp K_PP       &kp K_PREV    &kp K_NEXT    &trans    &trans          &mkp LCLK       &mkp RCLK     &trans           &trans  &bt BT_SEL 1
                                  &trans        &trans        &trans    &trans          &trans          &trans
             >;
         };
 
         misc {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans    &kp LG(LA(PG_UP))  &kp LG(W)             &kp LG(PAGE_DOWN)  &kp LG(LA(PAGE_DOWN))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &kp LG(LA(PG_UP))  &kp LG(PG_UP)         &kp LG(PAGE_DOWN)  &kp LG(LA(PAGE_DOWN))  &trans  &trans
 &trans  &trans  &trans  &trans  &trans     &trans    &kp LC(BACKSPACE)  &kp BACKSPACE         &kp LS(ENTER)      &trans                 &trans  &trans
 &trans  &trans  &trans  &trans  &trans     &trans    &kp DEL            &kp LA(SINGLE_QUOTE)  &trans             &trans                 &trans  &trans
                         &trans  &kp ENTER  &trans    &trans             &kp RET               &trans
@@ -119,9 +119,9 @@
 
         arrows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans       &trans    &trans    &trans           &trans       &trans     &kp K_FORWARD  &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans       &trans    &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &kp K_BACK     &bt BT_SEL 0
-&trans  &trans  &trans  &trans  &trans       &trans    &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &pretmux   &nexttmux      &bt BT_SEL 1
+&trans  &trans  &trans  &trans  &trans       &trans    &trans    &trans           &trans       &trans     &kp K_FORWARD  &trans
+&trans  &trans  &trans  &trans  &trans       &trans    &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &kp K_BACK     &trans
+&trans  &trans  &trans  &trans  &trans       &trans    &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &pretmux   &nexttmux      &trans
                         &trans  &kp K_PASTE  &trans    &trans    &kp K_CUT        &trans
             >;
         };
