@@ -13,16 +13,6 @@
 &mt {
 };
 
-&mmv {
-    time-to-max-speed-ms = <200>;
-    acceleration-exponent = <3>;
-};
-
-&msc {
-    time-to-max-speed-ms = <0>;
-    acceleration-exponent = <30>;
-};
-
 / {
     macros {
         pretmux: ctrlAP {
