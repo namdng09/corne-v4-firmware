@@ -119,10 +119,10 @@
 
         arrows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans       &trans    &trans    &trans           &trans       &trans     &kp K_FORWARD  &trans
-&trans  &trans  &trans  &trans  &trans       &trans    &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &kp K_BACK     &trans
-&trans  &trans  &trans  &trans  &trans       &trans    &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &pretmux   &nexttmux      &trans
-                        &trans  &kp K_PASTE  &trans    &trans    &kp K_CUT        &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans    &trans           &trans       &trans     &kp K_FORWARD  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &kp K_BACK     &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &pretmux   &nexttmux      &trans
+                        &trans  &kp LC(V)  &trans    &trans    &kp LC(X)        &trans
             >;
         };
 
@@ -136,10 +136,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans      &trans    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE      &kp TILDE  &kp LBKT   &tog 1
-&trans  &trans  &trans  &trans  &trans      &trans    &kp MINUS       &kp EQUAL        &kp UNDER      &kp PLUS   &kp COLON  &trans
-&trans  &trans  &trans  &trans  &trans      &trans    &kp LPAR        &kp RPAR         &kp BACKSLASH  &kp PIPE   &kp RBKT   &trans
-                        &trans  &kp K_COPY  &trans    &trans          &kp K_COPY       &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE      &kp TILDE  &kp LBKT   &tog 1
+&trans  &trans  &trans  &trans  &trans     &trans    &kp MINUS       &kp EQUAL        &kp UNDER      &kp PLUS   &kp COLON  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &kp LPAR        &kp RPAR         &kp BACKSLASH  &kp PIPE   &kp RBKT   &trans
+                        &trans  &kp LC(C)  &trans    &trans          &kp LC(C)        &trans
             >;
         };
 
