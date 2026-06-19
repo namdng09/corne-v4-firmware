@@ -73,20 +73,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q         &lt 5 W            &lt 6 E   &kp R      &kp T    &kp Y          &kp U      &kp I          &kp O               &kp P                 &mt LEFT_ALT LEFT_BRACKET
-&kp ESC         &hml LCTRL A  &hml LEFT_SHIFT S  &lt 4 D   &lt 3 F    &kp G    &kp H          &kp J      &kp K          &hmr RIGHT_SHIFT L  &hmr RCTRL SEMICOLON  &kp SQT
+&kp TAB         &kp Q         &lt 4 W            &lt 5 E   &kp R      &kp T    &kp Y          &kp U      &kp I          &kp O               &kp P                 &mt LEFT_ALT LEFT_BRACKET
+&kp ESC         &hml LCTRL A  &hml LEFT_SHIFT S  &lt 3 D   &lt 2 F    &kp G    &kp H          &kp J      &kp K          &hmr RIGHT_SHIFT L  &hmr RCTRL SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z         &kp X              &kp C     &kp V      &kp B    &kp N          &kp M      &kp COMMA      &kp DOT             &kp FSLH              &kp RIGHT_SHIFT
-                                                 &kp LGUI  &kp SPACE  &mo 2    &kp RG(SPACE)  &kp SPACE  &kp RIGHT_WIN
-            >;
-        };
-
-        dvorak {
-            display-name = "dvorak";
-            bindings = <
-&kp TAB         &kp SINGLE_QUOTE  &lt 5 COMMA        &lt 6 DOT  &kp P      &kp Y    &kp F          &kp G      &kp C          &kp R               &kp L                 &mt LEFT_ALT SLASH
-&kp ESC         &hml LCTRL A      &hml LEFT_SHIFT O  &lt 4 E    &lt 3 U    &kp I    &kp D          &kp H      &kp T          &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL S  &kp MINUS
-&kp LEFT_SHIFT  &kp SEMI          &kp Q              &kp J      &kp K      &kp X    &kp B          &kp M      &kp W          &kp V               &kp Z                 &kp RIGHT_SHIFT
-                                                     &kp LGUI   &kp SPACE  &mo 2    &kp RG(SPACE)  &kp SPACE  &kp RIGHT_WIN
+                                                 &kp LGUI  &kp SPACE  &mo 1    &kp RG(SPACE)  &kp SPACE  &kp RIGHT_WIN
             >;
         };
 
@@ -127,7 +117,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE      &kp TILDE  &kp LBKT   &tog 1
+&trans  &trans  &trans  &trans  &trans     &trans    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE      &kp TILDE  &kp LBKT   &tog 0
 &trans  &trans  &trans  &trans  &trans     &trans    &kp MINUS       &kp EQUAL        &kp UNDER      &kp PLUS   &kp COLON  &trans
 &trans  &trans  &trans  &trans  &trans     &trans    &kp LPAR        &kp RPAR         &kp BACKSLASH  &kp PIPE   &kp RBKT   &trans
                         &trans  &kp LC(C)  &trans    &trans          &kp LC(C)        &trans
