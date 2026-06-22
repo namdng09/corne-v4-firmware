@@ -101,10 +101,10 @@
 
         misc {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans       &kp LG(LA(PG_UP))  &kp LG(PG_UP)         &kp LG(PAGE_DOWN)  &kp LG(LA(PAGE_DOWN))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans       &kp LC(BACKSPACE)  &kp BACKSPACE         &kp LS(ENTER)      &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans       &kp DEL            &kp LA(SINGLE_QUOTE)  &trans             &trans                 &trans  &trans
-                        &trans  &kp ENTER  &kp LC(X)    &trans             &kp RET               &trans
+&trans  &trans  &trans  &trans     &trans     &trans       &kp LG(LA(PG_UP))  &kp LG(PG_UP)         &kp LG(PAGE_DOWN)  &kp LG(LA(PAGE_DOWN))  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans       &kp LC(BACKSPACE)  &kp BACKSPACE         &kp LS(ENTER)      &trans                 &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans       &kp DEL            &kp LA(SINGLE_QUOTE)  &trans             &trans                 &trans  &trans
+                        &kp LG(W)  &kp ENTER  &kp LC(X)    &kp RC(X)          &kp RET               &kp RG(W)
             >;
         };
 
