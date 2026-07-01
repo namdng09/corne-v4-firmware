@@ -129,7 +129,7 @@
 &trans  &trans  &trans  &trans  &trans     &trans    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE      &kp TILDE  &kp LBKT   &tog 1
 &trans  &trans  &trans  &trans  &trans     &trans    &kp MINUS       &kp EQUAL        &kp UNDER      &kp PLUS   &kp COLON  &trans
 &trans  &trans  &trans  &trans  &trans     &trans    &kp LPAR        &kp RPAR         &kp BACKSLASH  &kp PIPE   &kp RBKT   &trans
-                        &trans  &kp LC(C)  &trans    &trans          &kp LC(C)        &trans
+                        &trans  &kp LC(C)  &trans    &kp QUESTION    &kp LC(C)        &kp SLASH
             >;
         };
 
