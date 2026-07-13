@@ -82,9 +82,9 @@
         dvorak {
             display-name = "dvorak";
             bindings = <
-&kp TAB         &kp SINGLE_QUOTE  &lt 5 COMMA        &lt 6 DOT  &kp P      &kp Y    &kp F          &kp G      &kp C          &kp R               &kp L                 &mt LEFT_ALT SLASH
-&kp ESC         &hml LCTRL A      &hml LEFT_SHIFT O  &lt 4 E    &lt 3 U    &kp I    &kp D          &kp H      &kp T          &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL S  &kp MINUS
-&kp LEFT_SHIFT  &kp SEMI          &kp Q              &kp J      &kp K      &kp X    &kp B          &kp M      &kp W          &kp V               &kp Z                 &kp RIGHT_SHIFT
+&kp TAB         &kp SINGLE_QUOTE  &lt 5 COMMA        &lt 6 DOT  &kp P      &kp Y    &kp F          &kp G      &kp C          &kp R  &kp L                 &mt LEFT_ALT SLASH
+&kp ESC         &hml LCTRL A      &hml LEFT_SHIFT O  &lt 4 E    &lt 3 U    &kp I    &kp D          &kp H      &kp T          &kp N  &hmr RIGHT_CONTROL S  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &kp SEMI          &kp Q              &kp J      &kp K      &kp X    &kp B          &kp M      &kp W          &kp V  &kp Z                 &kp LC(RA(DEL))
                                                      &kp LGUI   &kp SPACE  &mo 2    &kp RG(SPACE)  &kp SPACE  &kp RIGHT_WIN
             >;
         };
