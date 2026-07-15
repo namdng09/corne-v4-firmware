@@ -82,9 +82,9 @@
         dvorak {
             display-name = "dvorak";
             bindings = <
-&kp TAB         &kp SINGLE_QUOTE  &lt 5 COMMA        &lt 6 DOT  &kp P      &kp Y    &kp F          &kp G      &kp C          &kp R  &kp L                 &mt LEFT_ALT SLASH
-&kp ESC         &hml LCTRL A      &hml LEFT_SHIFT O  &lt 4 E    &lt 3 U    &kp I    &kp D          &kp H      &kp T          &kp N  &hmr RIGHT_CONTROL S  &kp RIGHT_SHIFT
-&kp LEFT_SHIFT  &kp SEMI          &kp Q              &kp J      &kp K      &kp X    &kp B          &kp M      &kp W          &kp V  &kp Z                 &kp LC(RA(DEL))
+&kp TAB         &kp SINGLE_QUOTE  &lt 5 COMMA        &lt 6 DOT  &kp P      &kp Y    &kp F          &kp G      &kp C          &kp R               &kp L                 &kp LEFT_ALT
+&kp ESC         &hml LCTRL A      &hml LEFT_SHIFT O  &lt 4 E    &lt 3 U    &kp I    &kp D          &kp H      &kp T          &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL S  &kp CLCK
+&kp LEFT_SHIFT  &kp SEMI          &kp Q              &kp J      &kp K      &kp X    &kp B          &kp M      &kp W          &kp V               &kp Z                 &kp LC(RA(DEL))
                                                      &kp LGUI   &kp SPACE  &mo 2    &kp RG(SPACE)  &kp SPACE  &kp RIGHT_WIN
             >;
         };
@@ -109,10 +109,10 @@
 
         arrows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans    &trans      &pretmux         &nexttmux      &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &kp LEFT    &kp DOWN         &kp UP         &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &trans      &kp LC(LS(TAB))  &kp LC(TAB)    &trans     &trans  &trans
-                        &trans  &kp LC(V)  &trans    &kp K_BACK  &kp LC(V)        &kp K_FORWARD
+&trans  &trans  &trans  &trans  &trans     &trans       &trans      &pretmux         &nexttmux      &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans       &kp LEFT    &kp DOWN         &kp UP         &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans       &trans      &kp LC(LS(TAB))  &kp LC(TAB)    &trans     &trans  &trans
+                        &trans  &kp LC(V)  &kp LC(Z)    &kp K_BACK  &kp LC(V)        &kp K_FORWARD
             >;
         };
 
@@ -135,10 +135,10 @@
 
         number {
             bindings = <
-&trans  &trans  &trans  &trans  &kp LG(V)      &trans    &trans  &kp N7     &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &trans  &trans  &kp LG(LS(S))  &trans    &trans  &kp N4     &kp N5  &kp N6  &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans         &trans    &trans  &kp N1     &kp N2  &kp N3  &trans  &trans
-                        &trans  &kp LC(A)      &trans    &trans  &kp LC(A)  &trans
+&trans  &trans  &trans  &trans  &kp LG(V)      &trans           &trans  &kp N7     &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LG(LS(S))  &trans           &trans  &kp N4     &kp N5  &kp N6  &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans         &trans           &trans  &kp N1     &kp N2  &kp N3  &trans  &trans
+                        &trans  &kp LC(A)      &kp RG(RS(A))    &trans  &kp LC(A)  &trans
             >;
         };
     };
