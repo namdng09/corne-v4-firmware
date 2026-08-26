@@ -91,10 +91,10 @@
 
         mouse {
             bindings = <
-&trans       &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END       &trans    &trans  &trans     &trans     &trans  &trans  &bt BT_CLR
-&bootloader  &trans    &kp K_MUTE     &kp C_VOL_DN  &kp C_VOL_UP  &trans    &trans  &trans     &trans     &trans  &trans  &bt BT_SEL 0
-&sys_reset   &trans    &kp K_PP       &kp K_PREV    &kp K_NEXT    &trans    &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &bt BT_SEL 1
-                                      &trans        &trans        &trans    &trans  &trans     &trans
+&trans       &kp HOME  &kp PAGE_DOWN     &kp PG_UP     &kp END       &trans    &trans  &trans     &trans     &trans  &trans  &bt BT_CLR
+&bootloader  &trans    &kp K_MUTE        &kp C_VOL_DN  &kp C_VOL_UP  &trans    &trans  &trans     &trans     &trans  &trans  &bt BT_SEL 0
+&sys_reset   &trans    &kp K_PLAY_PAUSE  &kp K_PREV    &kp K_NEXT    &trans    &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &bt BT_SEL 1
+                                         &trans        &trans        &trans    &trans  &trans     &trans
             >;
         };
 
